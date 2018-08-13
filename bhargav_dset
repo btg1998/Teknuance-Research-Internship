@@ -1,0 +1,115 @@
+Inventory
+['Inventory_Id', 'Product_Id', 'Product_description', 'Manufacturer', 'Model_number', 'Status', 'Total_Qty', 'Qty_in_use']
+
+Feedback
+['Feedback_Id', 'Feedback_physician', 'Feedback_physical_examination', 'Feedback_overall', 'Feedback_communication', 'Other_complaints', 'Patients_Pat_Id']
+
+Asset
+['Asset_Id', 'Asset_name', 'Quantity', 'From_date', 'Unit_cost', 'Total_cost', 'Depreciation_value_per_unit']
+
+Room_Bill
+['Room_Bill_Id', 'Room_No', 'Room_Rate', 'Patients_Pat_Id', 'Stay_Stay_Id', 'Room_Room_Ty_Id', 'Invoice_Pat_Invoice_Id']
+
+Wards_Availability
+['Ward_Ava_Id', 'Ava_Status', 'Bed_Ava', 'Total_no_of_beds', 'Room_Room_Ty_Id', 'Floor_Floor_Id', 'Room_No', 'Room_Ty', 'Floor_Nm']
+
+Cafeteria_Menu_Rate
+['Menu_Rate_Id', 'Menu_Qty', 'Menu_Rate', 'From_Dt', 'To_Dt', 'Cafeteria_Menu_Caf_Menu_Id', 'Department_Details_Dept_Id', 'Caf_Menu']
+
+Cafeteria_Bill
+['Caf_Bill_Id', 'Qty', 'Tot_Caf_Bill_Dt', 'Tot_Bill_Amt', 'Patients_Pat_Id', 'Cafeteria_Menu_Caf_Menu_Id', 'Invoice_Pat_Invoice_Id']
+
+Payment_Mode_Card
+['Card_Pay_Id', 'Card_Type', 'Card_No', 'Card_Payment_Amt', 'Payment_Dt', 'Invoice_Pat_Invoice_Id']
+
+Type_of_patient
+['Type_of_pat_id', 'Pat_Ty']
+
+Income
+['Income_Id', 'Source_of_income', 'Income_amt']
+
+Attendance
+['Att_Id', 'Emp_Nm', 'Date', 'In_time', 'Out_time', 'Permission_hrs', 'Overtime_hrs', 'Total_hrs', 'Employees_Salary_details_Emp_Id']
+
+Wards_Tariff
+['Tariff_Id', 'Room_No', 'Room_Charges/Night', 'From_Dt', 'To_Dt', 'Date_Created', 'Date_Modified', 'Modified_By', 'Floor_Floor_Id']
+
+Employee_Contact_details
+['Emp_Cont_det_Id', 'City', 'State', 'Ph_No', 'Date_Created', 'Date_Modified', 'Modified_By', 'Employees_Salary_details_Emp_Id', 'Emp_Nm']
+
+Employee_Category
+['Emp_Cat_Id', 'Emp_Cat']
+
+Stay
+['Stay_Id', 'Phy', 'St_Dt', 'End_Dt', 'In_time', 'Out_time', 'Patients_Pat_Id', 'Room_No', 'Floor_No']
+
+Employee_Position_Details
+['Emp_Pos_Id', 'Emp_Pos', 'Employees_Salary_details_Emp_Id']
+
+Tests
+['Test_Id', 'Test_Nm']
+
+Bill_Break_up
+['Bill_Brk_Id', 'Room_Chg', 'Test_Chg', 'Cafeteris_Chg', 'Doc_Con_Fees', 'Tot_Bill_Amt', 'Patients_Pat_Id', 'Invoice_Pat_Invoice_Id']
+
+Patients
+['Pat_Id', 'Pat_Pre', 'Pat_Nm', 'DOB', 'Gender', 'Birth_Pl', 'Cur_Addr', 'City', 'State', 'Zip', 'Ph_No', 'Email', 'Since', 'Date_Created', 'Date_Modified', 'Modified_By', 'Type_of_patient_Type_of_pat_id']
+
+Doctor_Consulting_fees
+['Doc_Con_Fee_Id', 'Doc_Con_Fees', 'Date_Created', 'Date_Modified', 'Modified_By', 'Employees_Salary_details_Emp_Id', 'Employee_Position_Details_Emp_Pos_Id', 'Emp_Nm']
+
+Insurance
+['In_Comp_Id', 'In_Comp_Nm', 'In_Comp_Desc']
+
+Test_Rate
+['Test_Rate_Id', 'Test_Nm', 'Test_Rate', 'From_Dt', 'To_Dt', 'Testor', 'Tests_Test_Id']
+
+Case_Management
+['Case_Id', 'Trt', 'Case_Diag', 'Patients_Pat_Id', 'Treatment_Trt_Id', 'Case_Close_Reason_Reason_Id']
+
+Test_Bill
+['Test_Bill_Id', 'Test_Nm', 'Test_Dt', 'Test_Rate', 'Patients_Pat_Id', 'Tests_Test_Id', 'Invoice_Pat_Invoice_Id']
+
+Case_Close_Reason
+['Reason_Id', 'Reason', 'Reason_Desc']
+
+Floor
+['Floor_Id', 'Floor_Nm', 'Floor_In_Chg', 'Date_Created', 'Date_Modified', 'Modified_By']
+
+Cafeteria_Menu
+['Caf_Menu_Id', 'Caf_Menu']
+
+Payment_mode
+['Pay_Md_Id', 'Cash_Payment_Amt', 'Card_Payment_Amt', 'In_Payment_Amt', 'Amt_Paid', 'Patients_Pat_Id', 'Invoice_Pat_Invoice_Id']
+
+Expense
+['Expense_Id', 'Description', 'St_Dt', 'End_Dt', 'Total_Cost']
+
+Payment
+['Pat_Pay_Id', 'Payment_Dt', 'Tot_Bill_Amt', 'Amt_Paid', 'Amt_Due', 'Amt_Due_Dt', 'Patients_Pat_Id', 'Invoice_Pat_Invoice_Id']
+
+Room
+['Room_Ty_Id', 'Room_Ty', 'Date_Created', 'Date_Modified', 'Modified_By']
+
+Employees_Salary_Details
+['Emp_Id', 'Emp_Nm', 'SLN', 'NPI', 'Emp_Sal_per_Day', 'Emp_Sal', 'Emp_DOJ', 'Emp_DOL', 'Status', 'Date_Created', 'Date_Modified', 'Modified_By', 'Dept_Id', 'Emp_Cat_Id', 'Emp_Pos_Id']
+
+Discharge
+['Discharge_Id', 'Discharge_Dt', 'Discharge_time', 'Patients_Pat_Id', 'Treatment_Trt_Id']
+
+Department_Details
+['Dept_Id', 'Dept_Nm', 'HOD', 'Date_Created', 'Date_Modified', 'Modified_By']
+
+Treatment
+['Trt_Id', 'Trt', 'Phy', 'Nur', 'Date Created', 'Date_Modified', 'Modified_By', 'Visit_details', 'Error_status', 'Patients_Pat_Id', 'Type_of_patient_Type_of_pat_id', 'Doctor_Consulting_fees_Doc_Con_Fee_Id', 'Pat_Nm']
+
+Payment_Mode_Cash
+['Cash_Pay_Id', 'Cash_Deno_1', 'Cash_Deno_2', 'Cash_Deno_5', 'Cash_Deno_10', 'Cash_Deno_20', 'Cash_Deno_50', 'Cash_Deno_100', 'Cash_Payment_Amt', 'Payment_Dt', 'Invoice_Pat_Invoice_Id']
+
+Invoice
+['Pat_Invoice_Id', 'Invoice_Gen_Dt', 'Tot_Bill_Amt', 'Status', 'Patients_Pat_Id']
+
+Payment_Mode_Insurance
+['In_Pay_Id', 'Policy_No', 'Dt_From', 'Dt_To', 'In_Payment_Amt', 'Payment_Dt', 'Invoice_Pat_Invoice_Id', 'Insurance_In_Comp_Id']
+
+

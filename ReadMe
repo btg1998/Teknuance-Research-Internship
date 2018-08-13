@@ -1,0 +1,1 @@
+In a given dataset there are table names with their columns in a list. You need to cluster the tables by looking at the columns who are more associated with similar tables and then perform the operation to create the final json with cluster of similar tables with their columns and links.
